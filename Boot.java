@@ -29,4 +29,11 @@ public class Boot
     {
         motorisiert = neuMotorisiert;
     }
+    
+    public Boot()
+    {
+        name = "UNKN";
+        plaetze = 0;
+        motorisiert = false;
+    }
 }
