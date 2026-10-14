@@ -17,17 +17,22 @@ public class Boot
         return motorisiert;
     }
     
-    public void setName(String neuName)
+    public void setName(String name)
     {
-        name = neuName;
+        this.name = name;
     }
-    public void setPlaetze(int neuPlaetze)
+    
+    public void setPlaetze(int plaetze)
     {
-        plaetze = neuPlaetze;
+        if (plaetze >= 1 && plaetze <= 5000)
+        {
+        this.plaetze = plaetze;
+        }
     }
-    public void setMotorisiert(boolean neuMotorisiert)
+    
+    public void setMotorisiert(boolean motorisiert)
     {
-        motorisiert = neuMotorisiert;
+        this.motorisiert = motorisiert;
     }
     
     public Boot()
