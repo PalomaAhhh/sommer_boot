@@ -41,4 +41,19 @@ public class Boot
         plaetze = 0;
         motorisiert = false;
     }
+    
+    //Seestern - 6 Plaetze: true
+    //Moewe - 4 Plaetze: false
+    //Poseidon - 12 Plaetze: true
+    
+    public Boot(String name,int plaetze, boolean motorisiert)
+    {
+        this.name = name;
+        this.plaetze = plaetze;
+        this.motorisiert = motorisiert;
+    }
+    public String printBoot()
+    {
+        return (name+" Boot: "+plaetze+" Plaetze - "+motorisiert);
+    }
 }
